@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+		<meta charset = "UTF-8">
+		<meta http-equiv="X-UA-Compatible" content = "IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>My Personal Portfolio Website</title>
+		<link rel = "stylesheet" href = "css\style.css">
+</head>
+<body>
+<div id="header">
+	<div class="container">
+		<nav>
+			<img src="pictures\logo.png" class="logo">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="header-text">
+			<p>Computer Engineering Student</p>
+			<h1>Hi, I'm <span>Juanito Ramos II</span> 
+				<br>from the <span class="first">Philippines</span></h1></br></h1>
+		</div>
+	</div>
+</div>	
+<!-------about------------>
+<div id="about"></div>
+	<div class="container">
+		<div class="row">
+			<div class="about-col-1">
+				<img src="pictures\user.png">
+			</div>
+			<div class="about-col-2">
+				<h1 class="sub-title">About Me</h1>
+				<p >
+					Hi! My name is Juanito M. Ramos II, currently taking Bachelor of Science in Computer Engineering. I am passionate when it 
+					comes to learning new technologies, technical writing, solving arithmetic problems, and constructing circuits. 
+					I am an aspiring Data Scientist and Professor. I just study web development as my hobby. My other hobbies are 
+					playing basketball, badminton, and mobile games. This personal website will serve as my 
+					portfolio for my upcoming projects.
+				</p>
+			
+				<div class="tab-titles">
+					<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+					<p class="tab-links" onclick="opentab('experience')">Experience</p>
+					<p class="tab-links" onclick="opentab('education')">Education</p>
+				</div>
+				<div class="tab-contents active-tab" id="skills">
+					<ul>
+						<li><span>Data Science</span><br>Statistics and Machine Learning Concepts<br></li>
+						<li><span>Android App Development</span><br>Java and Android Studio<br></li>
+						<li><span>Backend Development</span><br>Database<br></li>
+					</ul>
+				</div>
+				<div class="tab-contents" id="experience">
+					
+				</div>
+				<div class="tab-contents" id="education">
+					<ul>
+						<li><span>BS Computer Engineering</span><br>Rizal Technological Univeristy, 2021-2025<br></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+	
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link");
+			
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+			
+		}
+	}
+
+
+</script>
+
+</body>
+</html>
