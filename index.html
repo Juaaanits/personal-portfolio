@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>My Personal Portfolio Website</title>
 		<link rel = "stylesheet" href = "css\style.css">
+		<script src="https://kit.fontawesome.com/20bba4b90c.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="header">
@@ -68,6 +69,44 @@
 		</div>
 	</div>
 </div>
+<!-------services-------->
+<div id="services">
+	<div class="container">
+		<h1 class="sub-title">My Services</h1>
+		<div class="services-list">
+			<div>
+				<i class="fa-solid fa-pen"></i>
+				<h2>Technical Writing</h2>
+				<p>HDHJAJDJAJFJAJFJAFLorem ipsum dolor sit amet. Qui accusantium praesentium qui adipisci inventore et minus quae sit nihil cupiditate in maiores earum. Est labore dolor et corporis voluptates sit excepturi suscipit. Eum nobis nihil et magni velit ut aliquam numquam sed omnis libero.
+				Est tenetur temporibus sit nemo porro sit architecto incidunt. 33 nostrum tenetur et deserunt soluta et corrupti assumenda et culpa doloribus aut inventore totam cum officia officia. Qui excepturi harum ea animi velit et animi perferendis est voluptatibus internos est facilis adipisci sed numquam consequatur! Aut quidem cumque ea rerum minima aut nobis molestiae eos deleniti aspernatur aut voluptatibus consequatur ut quod fuga ea magnam voluptatibus.
+				Sit earum voluptatem eos rerum accusantium qui quia sapiente et voluptate temporibus qui dolor quae. Aut quod quis ex enim praesentium eum asperiores temporibus est eaque molestiae 33 eveniet quia.</p>
+				<a href="#">Learn More</a>
+			</div>
+			<div>
+				<i class="fa-solid fa-code"></i>
+				<h2>Android Development</h2>
+				<p>HDHJAJDJAJFJAJFJAFHDHJAJDJAJFJAJFJAFLorem ipsum dolor sit amet. Qui accusantium praesentium qui adipisci inventore et minus quae sit nihil cupiditate in maiores earum. Est labore dolor et corporis voluptates sit excepturi suscipit. Eum nobis nihil et magni velit ut aliquam numquam sed omnis libero.
+					Est tenetur temporibus sit nemo porro sit architecto incidunt. 33 nostrum tenetur et deserunt soluta et corrupti assumenda et culpa doloribus aut inventore totam cum officia officia. Qui excepturi harum ea animi velit et animi perferendis est voluptatibus internos est facilis adipisci sed numquam consequatur! Aut quidem cumque ea rerum minima aut nobis molestiae eos deleniti aspernatur aut voluptatibus consequatur ut quod fuga ea magnam voluptatibus.
+					Sit earum voluptatem eos rerum accusantium qui quia sapiente et voluptate temporibus qui dolor quae. Aut quod quis ex enim praesentium eum asperiores temporibus est eaque molestiae 33 eveniet quia.</p>
+				<a href="#">Learn More</a>
+			</div>
+			<div>
+				<i class="fa-solid fa-chart-simple"></i>
+				<h2>Data Science</h2>
+				<p>HDHJAJDJAJFJAJFJAFHDHJAJDJAJFJAJFJAFLorem ipsum dolor sit amet. Qui accusantium praesentium qui adipisci inventore et minus quae sit nihil cupiditate in maiores earum. Est labore dolor et corporis voluptates sit excepturi suscipit. Eum nobis nihil et magni velit ut aliquam numquam sed omnis libero.
+					Est tenetur temporibus sit nemo porro sit architecto incidunt. 33 nostrum tenetur et deserunt soluta et corrupti assumenda et culpa doloribus aut inventore totam cum officia officia. Qui excepturi harum ea animi velit et animi perferendis est voluptatibus internos est facilis adipisci sed numquam consequatur! Aut quidem cumque ea rerum minima aut nobis molestiae eos deleniti aspernatur aut voluptatibus consequatur ut quod fuga ea magnam voluptatibus.
+					Sit earum voluptatem eos rerum accusantium qui quia sapiente et voluptate temporibus qui dolor quae. Aut quod quis ex enim praesentium eum asperiores temporibus est eaque molestiae 33 eveniet quia.</p>
+				<a href="#">Learn More</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-------portfolio-------- -->
+<div id="portfolio">
+	<div class="container">
+		<h1 class="sub-title">My Works</h1>
+	</div>
+</div>
 
 <script>
 
@@ -83,6 +122,8 @@
 			tabcontent.classList.remove("active-tab");
 			
 		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
 	}
 
 
