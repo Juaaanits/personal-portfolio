@@ -302,8 +302,48 @@ nav ul li a:hover::after {
 	background: #ff004f;
 }
 
-/*Techcal Skills*/
+/*Technical Skills*/
 
 .technical-skills{
 	
 }
+
+
+.techskills-list{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 40px;
+	margin-top: 50px;
+}
+.techskills-list div{
+	background: #262626;
+	padding: 40px;
+	font-size: 13px;
+	font-weight: 300;
+	border-radius: 10px;
+	text-align: center;
+	transition: background 0.5s, transform 0.5s;
+}
+
+.techskills-list div i{
+	font-size: 100px;
+	margin-bottom: 30px;
+	
+}
+
+
+.techskills-list div a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+.techskills-list div:hover {
+	background: #ff004f;
+	transform: translateY(-10px);
+}
+
+
+
