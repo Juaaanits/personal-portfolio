@@ -211,6 +211,8 @@ nav ul li a:hover::after {
 	transform: translateY(-10px);
 }
 
+
+/* works */
 #portfolio{
 	padding: 50px 0;
 }
@@ -298,4 +300,10 @@ nav ul li a:hover::after {
 
 .btn:hover {
 	background: #ff004f;
+}
+
+/*Techcal Skills*/
+
+.technical-skills{
+	
 }
