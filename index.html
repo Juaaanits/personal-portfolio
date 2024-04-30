@@ -13,13 +13,18 @@
 	<div class="container">
 		<nav>
 			<img src="pictures\logo.png" class="logo">
-			<ul>
+			<ul id="side-menu">
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Works</a></li>
+				<li><a href="#">Technical Skills</a></li>
 				<li><a href="#">Contact</a></li>
+				<i class="fas fa-times" onclick="closemenu()"></i>
 			</ul>
+
+			<i class="fas fa-bars" onclick="openmenu()"></i>
+
 		</nav>
 		<div class="header-text">
 			<p>Computer Engineering Student</p>
@@ -244,6 +249,21 @@
 		document.getElementById(tabname).classList.add("active-tab");
 	}
 
+
+</script>
+
+<script>
+
+
+	var sidemenu = document.getElementById("side-menu");
+
+	function openmenu(){
+		sidemenu.style.right = "0";
+	}
+
+	function closemenu(){
+		sidemenu.style.right = "-200px";
+	}
 
 </script>
 
